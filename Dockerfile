@@ -8,7 +8,7 @@ WORKDIR /code
 COPY ./ .
 
 # create a mount for the code
-VOLUME ./src/:/code/src
+VOLUME ./notebooks/:/code/
 
 # install dependencies
 RUN pip install -r requirements.txt
